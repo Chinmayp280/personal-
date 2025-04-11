@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <style>* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .hero {
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem;
+  }
+  
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+    margin-bottom: 1rem;
+  }
+  
+  .highlight {
+    color: #ffd700;
+  }
+  
+  .tagline {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+  }
+  
+  .skills {
+    background-color: #ffffff;
+    padding: 3rem 2rem;
+  }
+  
+  .skills h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+  }
+  
+  .skills-list li {
+    background-color: #4facfe;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 20px;
+    font-weight: bold;
+  }
+  
+  .about {
+    padding: 3rem 2rem;
+    background-color: #eef2f3;
+  }
+  
+  .about h2 {
+    margin-bottom: 1rem;
+    color: #4facfe;
+  }
+  
+  .about h3 {
+    margin-top: 1.5rem;
+    color: #333;
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #333;
+    color: #fff;
+  }
+  .projects {
+  background-color: #fff;
+  padding: 3rem 2rem;
+}
+
+.projects h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #4facfe;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  background-color: #f0f8ff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+.project-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.project-card h3 {
+  margin: 0.5rem 0;
+  color: #333;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <img src="me.jpg" alt="Your Photo" class="profile-pic" />
+      <h1>Hello, I'm <span class="highlight">Chinmay Patil</span></h1>
+      <p class="tagline">Web Developer | UI/UX Designer | Tech Enthusiast | </p>
+    </div>
+  </header>
+
+  <section class="skills">
+    <div class="container">
+      <h2>My Skills</h2>
+      <ul class="skills-list">
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        <li>Responsive Design</li>
+        <li>Git & GitHub</li>
+        <li>UI/UX Design</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        Hi there! I'm a curious mind and a 1st Year Engineering  student who's not afraid to dream big and build bold. coding smart solutions, or designing websites that tell a story — I'm all about bringing ideas to life.
+
+I believe learning doesn't stop in the classroom. That's why I spend my time diving into the world of circuits, software, and creativity. My latest adventure? Building a travel recommendation website that helps people discover new places like never before.
+
+Tech is my playground. Projects are my passion. And the journey? It's just getting started 
+      </p>
+      <h3>Education</h3>
+      <p>1st Year Engineering Student, at R. C. Patel Institute of Technology.</p>
+
+      <h3>Experience</h3>
+      <p>Personal projects, and freelance website designs.</p>
+    </div>
+  </section>
+  <section class="projects">
+    <div class="container">
+      <h2>My Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <img src="project1.png" alt="Project 1" />
+          <h3>Portfolio Website</h3>
+          <p>A personal website to showcase my work and skills using HTML & CSS.</p>
+        </div>
+        <div class="project-card">
+          <img src="stopwatch.png" alt="Project 2" />
+          <h3>Stop Watch Web application</h3>
+          <p>A simple web app to start, stop, and reset a stopwatch.</p>
+        </div>
+        <div class="project-card">
+          <img src="xo.png" alt="Project 3" />
+          <h3>Tic-Tac-Toe</h3>
+          <p>AA fun and easy web game of Tic Tac Toe for two players.</p>
+        </div>
+        <div class="project-card">
+          <img src="travel.png" alt="Project 5" />
+          <h3>travel recommendation website </h3>
+          <p>A website that suggests travel destinations with maps, bookings, and user reviews.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <footer class="footer">
+    <p>© 2025 Chinmay Patil. All rights reserved.</p>
+  </footer>
+</body>
+</html>
